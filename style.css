@@ -12,13 +12,15 @@ body{
     display: none;
 }
 .titulo{
+    position: relative;
     height: 20%;
     width: 100%;
     display: flex;
     justify-content: center;
     font-size: 2rem;
     font-family: sans-serif;
-    padding-top: 90px;
+    padding-top: 10vh;
+    flex-wrap: wrap;
 }
 .board{
     padding-bottom: 30px;
@@ -154,3 +156,19 @@ tirando as bordas das células
 /*
 tirando as bordas das células
 */
+
+@media only screen and (max-width: 650px){
+    .titulo{
+        font-size: 1rem;
+    }
+}
+@media only screen and (max-height: 630px){
+    .titulo{
+        padding-top: 2px;
+    }
+}
+@media only screen and (max-height: 490px){
+    .titulo{
+        display: none;
+    }
+}
